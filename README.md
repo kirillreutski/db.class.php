@@ -3,6 +3,7 @@ Simple PHP class for MySQL, allowing to call SUID without any mappings (like $db
 
 # SHOWCASE:
 
+```php
 var_dump($d->test_table_users()->values(array("name"=>"kirill","email"=>"kir@mail.by", "password"=>"321"))->insert());
 
 var_dump($d->test_table_users()->get(1));
@@ -18,9 +19,9 @@ var_dump($d->test_table_users()->get(1));
 var_dump($d->test_table_users()->values(array("email"=>"kir@mail.by", "password"=>"123"))->set(array("email"=>"123@asd.com")));
  var_dump($d->test_table_users()->delete(1));
  var_dump($d->test_table_users()->delete(array("email"=>"123.@com.by")));
-
+```
 # DB Example
-
+```
 CREATE TABLE `test_table_users` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL,
@@ -36,3 +37,4 @@ ALTER TABLE `test_table_users`
   
 INSERT INTO `test_table_users` (`id`, `name`, `email`, `password`) VALUES
 (2, 'kirill', 'mail@mail.by', '321');
+```
