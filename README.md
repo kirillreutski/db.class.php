@@ -13,7 +13,7 @@ var_dump($d->test_table_users()->columns('email, id, password')->get(1));
 var_dump($d->test_table_users()->get(array("email"=>"asd", "password"=>"321")));
 var_dump($d->test_table_users()->get(array("email"=>"asd", "password"=>"321"), "OR"));
 var_dump($d->test_table_users()->get());
-var_dump($d->test_table_users()->email("kirill@ucard.by")->set(1));
+var_dump($d->test_table_users()->email("kirill@mail.by")->set(1));
 var_dump($d->test_table_users()->values(array("email"=>"kir@mail.by", "password"=>"123"))->set(1));
 var_dump($d->test_table_users()->get(1));
 var_dump($d->test_table_users()->values(array("email"=>"kir@mail.by", "password"=>"123"))->set(array("email"=>"123@asd.com")));
