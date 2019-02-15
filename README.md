@@ -8,7 +8,7 @@ var_dump($d->test_table_users()->values(array("name"=>"kirill","email"=>"kir@mai
 
 var_dump($d->test_table_users()->get(1));
 var_dump($d->test_table_users()->get(array("password"=>"321")));
- var_dump($d->test_table_users()->email()->get(1));
+var_dump($d->test_table_users()->email()->get(1));
 var_dump($d->test_table_users()->columns('email, id, password')->get(1));
 var_dump($d->test_table_users()->get(array("email"=>"asd", "password"=>"321")));
 var_dump($d->test_table_users()->get(array("email"=>"asd", "password"=>"321"), "OR"));
@@ -17,8 +17,8 @@ var_dump($d->test_table_users()->email("kirill@ucard.by")->set(1));
 var_dump($d->test_table_users()->values(array("email"=>"kir@mail.by", "password"=>"123"))->set(1));
 var_dump($d->test_table_users()->get(1));
 var_dump($d->test_table_users()->values(array("email"=>"kir@mail.by", "password"=>"123"))->set(array("email"=>"123@asd.com")));
- var_dump($d->test_table_users()->delete(1));
- var_dump($d->test_table_users()->delete(array("email"=>"123.@com.by")));
+var_dump($d->test_table_users()->delete(1));
+var_dump($d->test_table_users()->delete(array("email"=>"123.@com.by")));
 ```
 # DB Example
 ```
